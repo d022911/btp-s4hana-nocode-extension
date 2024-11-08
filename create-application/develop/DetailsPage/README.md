@@ -10,9 +10,11 @@ You will add a new page to your application and add page parameters so you can a
 
 2. Choose **ADD NEW PAGE**.
 
-   <img src="./ba_createPage.png">
+   ![apps_2](https://github.com/user-attachments/assets/5e2f50fc-069d-4f7c-b634-45c4ec5a8ebe)
 
 3. Enter **Details** as **Page name**, and then Select **OK**. Your new page will be created and open.
+   ![apps_3](https://github.com/user-attachments/assets/a1aa5050-910f-4e9f-b6bb-e393e997e7e9)
+
 
 4. On the Details page, choose the toggle button to switch to **VARIABLES** tab.
 
@@ -30,7 +32,8 @@ You will add a new page to your application and add page parameters so you can a
 
 11. Choose **SAVE**.
 
-    <img src="./ba_pageparameters1.png">
+    ![apps_4](https://github.com/user-attachments/assets/a3afe2dc-1b0b-4b8f-80bf-c7cede58a890)
+
 
 12. Switch back to **VIEW** via the toggle button.
 
@@ -39,43 +42,47 @@ You will add a new page to your application and add page parameters so you can a
 To show the business partner details on the details page, you need to connect the **Home** page and the **Details** page. In this section, you will first create a new navigation logic to pass the page parameter created in the previous step.
 On the details page, you will then load the business partner address by passing the business partner id to the **A_BusinessPartnerAddress** entity.
 
-1. On the top left section, choose the name of your current page **Details**, which is highlighted in light blue, to open the **PAGES** menu.  
-2. Select **Home** to switch to Home page to create a logic to pass the business partner and business partner full name parameters from Home page to Details page .
-3. Select the first row in the list.
+1. On the top left section, choose the name of your current page **Details**, which is highlighted in light blue, to open the **PAGES** menu.
+   ![apps_5](https://github.com/user-attachments/assets/6b73db7f-1f3e-43da-9ccf-5f581a695341)
 
-4. At the bottom of App Builder where you can see **Add logic to LIST ITEM1**. Choose the arrow to open the logic canvas.
+3. Select **Home** to switch to Home page to create a logic to pass the business partner and business partner full name parameters from Home page to Details page .
+4. Select the first row in the list.
 
-   <img src="./ba_enableNavigation.png" height="400px">
+5. At the bottom of App Builder where you can see **Add logic to LIST ITEM1**. Choose the arrow to open the logic canvas.
 
-5. In the component menu on the left side, choose **NAVIGATION** &rarr; **Open page** to add a function that opens a new page.
+   ![apps_6](https://github.com/user-attachments/assets/8fd8e771-8b2f-4739-9817-e7e5071e8568)
 
-6. Drag and drop it to the Logic canvas.
 
-7. Hover over the **Component tap** and choose the round dot. Connect the dots of the **Component tap** and the **Open page** components. It creates a new connection and sets the logic to open a new page on the event of tapping an item in the list item.
+6. In the component menu on the left side, choose **NAVIGATION** &rarr; **Open page** to add a function that opens a new page.
+
+7. Drag and drop it to the Logic canvas.
+
+8. Hover over the **Component tap** and choose the round dot. Connect the dots of the **Component tap** and the **Open page** components. It creates a new connection and sets the logic to open a new page on the event of tapping an item in the list item.
 
    <img src="./logiccanvas2.png">
 
-8. Choose the **Open page** component.
+9. Choose the **Open page** component.
 
-9. On the right side of the screen, select **PROPERTIES** &rarr; **Parameters** &rarr; **businessPartnerId**.
+10. On the right side of the screen, select **PROPERTIES** &rarr; **Parameters** &rarr; **businessPartnerId**.
 
-10. Choose the **X** button. It opens a popup.
+11. Choose the **X** button. It opens a popup.
 
-    <img src="./openPage.png">
+    ![apps_7](https://github.com/user-attachments/assets/4af8709a-e6f5-41c1-a7eb-81a7adf5f1f9)
 
-11. Select **Data item in repeat**.
 
-12. Select **current**.
+12. Select **Data item in repeat**.
 
-13. Scroll the list and select **BusinessPartner**, and then choose **SAVE**.
+13. Select **current**.
+
+14. Scroll the list and select **BusinessPartner**, and then choose **SAVE**.
 
     <img src="./ba_pageVariable.png">
 
-14. Repeat the steps 9-13 for to the **businesspartnerName** parameter and select **current.BusinessPartnerFullName**.
+15. Repeat the steps 9-13 for to the **businesspartnerName** parameter and select **current.BusinessPartnerFullName**.
 
     <img src="./openPage02.png">
     
-15. Choose **SAVE** to save the changes.
+16. Choose **SAVE** to save the changes.
 
 With this step now, you can pass the selected business partner id and name fields from the list to the details page.
 
